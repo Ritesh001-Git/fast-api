@@ -13,3 +13,20 @@ FastAPI automatically generates interactive API documentation (Swagger UI and Re
 FastAPI uses Python type hints for data validation - this means your API checks incoming data automatically, preventing many bugs early on.
 ### Async Support
 Built-in support for Python's async/await allows handling many requests at the same time.
+
+## WHAT IS ROUTING IN FASTAPI?
+Routing means connecting a URL (web address) with a Python function.
+In FastAPI, routes are defined using decorators like:
+- @app.get() - handles GET requests
+- @app.post() — handles POST requests
+- @app.put() - handles updates
+- @app.delete() - handles deletes
+These HTTP methods decide how users will interact with your API. For example, GET is usually for fetching data, and POST is usually for sending (creating) new data.
+
+### PATH PARAMETERS: DYNAMIC URLS
+
+- Part of the actual URL path. They are required to find the specific resource (like a specific user ID).
+
+### QUERY PARAMETERS: OPTIONAL EXTRA INFO
+
+- Added to the end of the URL after a ?. They are typically optional and used to sort, filter, or page through results.
