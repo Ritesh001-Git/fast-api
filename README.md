@@ -30,3 +30,21 @@ These HTTP methods decide how users will interact with your API. For example, GE
 ### QUERY PARAMETERS: OPTIONAL EXTRA INFO
 
 - Added to the end of the URL after a ?. They are typically optional and used to sort, filter, or page through results.
+
+
+## DATABASE INTEGRATION IN FASTAPI
+SQLAlchemy ORM-a powerful Python library that lets you work with databases using Python
+classes instead of writing raw SQL queries. FastAPI doesn't force you to use any one database,
+but SQLAlchemy is one of the most common and flexible choices.
+
+### Why Use a Database With FastAPI?
+Databases let your API persist data - - so the data stays even after your app
+restarts.
+#### With a database, you can:
+- ✓ Save users
+- ✓ Store application data
+- ✓ Run queries and filters
+- ✓ Build real-world applications
+
+We will use SQLAlchemy ORM (Object Relational Mapper) so we can treat
+database tables as Python classes and rows as objects.
