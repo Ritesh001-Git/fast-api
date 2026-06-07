@@ -58,6 +58,17 @@ This is the process of verifying who a user is - usually through a login system 
 After authentication, authorization determines what the authenticated user is allowed to do - e.g., regular user vs admin.
 
 ### Simple Example:
-**Authentication** = User proves they are user123
+- **Authentication** = User proves they are user123
+- **Authorization** = User123 can view their own data but not delete another user's data
 
-**Authorization** = User123 can view their own data but not delete another user's data
+## WHAT & WHY USE JWT (JSON WEB TOKENS)?
+- ◆ JWT stands for JSON Web Token a compact token sent by clients to prove they are authenticated.
+Tokens are signed with a secret key, so the server can verify they haven't been tampered with.
+- ◆ No server-side session storage is needed - everything needed to verify is inside the token.
+
+How JWT Works:
+- User logs in with credentials
+- Server verifies login and generates a JWT token
+- Client includes this token in the Authorization header for future requests
+- Server checks token validity before responding
+- This pattern makes scalable and stateless authentication possible.
