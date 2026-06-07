@@ -51,12 +51,14 @@ database tables as Python classes and rows as objects.
 
 ## WHAT IS AUTHENTICATION VS AUTHORIZATION?
 
-### Authentication:
+### Authentication
 This is the process of verifying who a user is - usually through a login system (like email + password). Only authenticated users should access certain parts of your API.
 
-### Authorization:
+### Authorization
 After authentication, authorization determines what the authenticated user is allowed to do - e.g., regular user vs admin.
 Simple Example:
 
+
 **Authentication** = User proves they are user123
+
 **Authorization** = User123 can view their own data but not delete another user's data
