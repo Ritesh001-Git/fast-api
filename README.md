@@ -62,9 +62,9 @@ After authentication, authorization determines what the authenticated user is al
 - **Authorization** = User123 can view their own data but not delete another user's data
 
 ## WHAT & WHY USE JWT (JSON WEB TOKENS)?
-- ◆ JWT stands for JSON Web Token a compact token sent by clients to prove they are authenticated.
+-  JWT stands for JSON Web Token a compact token sent by clients to prove they are authenticated.
 Tokens are signed with a secret key, so the server can verify they haven't been tampered with.
-- ◆ No server-side session storage is needed - everything needed to verify is inside the token.
+-  No server-side session storage is needed - everything needed to verify is inside the token.
 
 How JWT Works:
 - User logs in with credentials
