@@ -16,6 +16,13 @@ ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
 
 app = FastAPI()
 
+@app.get("/") # / means Home endpoint
+def read_root():
+    return {"Message":"This is the main app"}
+
+@app.get("/greet")
+def greet():
+    return {"Greet":"hello World"}
 
 # Create JWT Token
 print(
